@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Quiz app</title>
+<link href="styles/style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="main">
+
+<div>
+    <h1>Simple Quiz with Firebase</h1>
+</div>
+
+<br/><br/><br/>
+
+<div>
+    <button id="c_quiz">Create Quiz</button> <br/><br/>
+    <button id="t_quiz">Take Quiz</button>
+</div>
+
+</div>
+
+</body>
+<script >
+
+var c_quiz=document.getElementById('c_quiz');
+var t_quiz=document.getElementById('t_quiz');
+
+c_quiz.addEventListener('click',(e)=>{
+window.location.href="pages/create_quiz.html"
+});
+
+t_quiz.addEventListener('click',(e)=>{
+window.location.href="pages/quiz.html"
+});
+
+</script>
+</html>

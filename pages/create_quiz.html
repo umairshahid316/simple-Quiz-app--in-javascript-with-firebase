@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="..\styles/style.css" rel="stylesheet"/>
+
+</head>
+<body>
+<div class="main">
+
+    <div>
+<h1>Create Quiz Question</h1>
+    </div>
+
+<div>
+    <fieldset>
+        <form>
+        <label>Type Question and Options:</label><br/>
+        <input name="question" id="question" placeholder="Question here" type="text" required><br/><br/><br/>
+        <input name="opt1" id="opt1" placeholder="Option 1 here" type="text" required><br/>
+        <input name="opt2"  id="opt2"placeholder="Option 2 here" type="text" required><br/>
+        <input name="opt3" id="opt3" placeholder="Option 3 here" type="text" required><br/>
+        <input name="opt4" id="opt4" placeholder="Option 4 here" type="text" required><br/><br/>
+        <input name="c_opt" id="c_opt" placeholder="Correct Option here" type="text" required><br/><br/><br/>
+        
+        <button id="u_quiz" onclick="creat_quiz()">Upload Question</button>
+    </form>
+        <br/><br/>
+        <button id="t_quiz_b">Take Quiz</button>
+       
+        <br/>
+    </fieldset>
+</div>
+
+
+
+</div>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAnVqv6jBQZtg_r9d96uQk0njjypzlNyTg",
+    authDomain: "simple-quiz-app-15e36.firebaseapp.com",
+    databaseURL: "https://simple-quiz-app-15e36.firebaseio.com",
+    projectId: "simple-quiz-app-15e36",
+    storageBucket: "simple-quiz-app-15e36.appspot.com",
+    messagingSenderId: "218591805250",
+    appId: "1:218591805250:web:a30639d81ee58b5cf812db",
+    measurementId: "G-BEMVZ815MM"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</body>
+
+<script>
+    var t_quiz_b=document.getElementById('t_quiz_b');
+    t_quiz_b.addEventListener('click',(e)=>{
+window.location.href="quiz.html"
+});    
+
+</script>
+<script src="..\scripts/main.js"></script>
+</html>

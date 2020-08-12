@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link href="..\styles/style.css" rel="stylesheet"/>
+
+</head>
+<body>
+<div >
+
+    <div>
+        <h1>Simple Quiz</h1>
+    </div>
+    
+    <div id="d_set">
+    </div>
+<br/><br/><br/>
+<button id="e_quiz" onclick="end_quiz()">Result</button>
+
+
+</div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAnVqv6jBQZtg_r9d96uQk0njjypzlNyTg",
+    authDomain: "simple-quiz-app-15e36.firebaseapp.com",
+    databaseURL: "https://simple-quiz-app-15e36.firebaseio.com",
+    projectId: "simple-quiz-app-15e36",
+    storageBucket: "simple-quiz-app-15e36.appspot.com",
+    messagingSenderId: "218591805250",
+    appId: "1:218591805250:web:a30639d81ee58b5cf812db",
+    measurementId: "G-BEMVZ815MM"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</body>
+<script src="..\scripts/main.js"></script>
+
+</html>
